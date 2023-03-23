@@ -1,0 +1,14 @@
+{
+  "name": "responsive-portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio for demonstration purposes",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive "
+  },
+  "author": "Crazyskillzz",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
