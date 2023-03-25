@@ -3,11 +3,23 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  main {
+    .sm-heading {
+      margin-bottom: 12rem;
+    }
+  }
 }
 // Desktops & Laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    .sm-heading {
+      margin-bottom: 8rem;
+    }
   }
 }
 // Tablets & Small Laptops
@@ -18,7 +30,15 @@
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+
+    .sm-heading {
+      font-size: 1rem;
+      margin-bottom: 10rem;
+      padding: 0.1rem 0.5rem;
+      background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
     }
   }
 
@@ -72,7 +92,60 @@
     margin-top: 10vh;
   }
 
-  .projects {
-    grid-template-columns: 1fr;
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 2;
+      margin-bottom: 3.5rem;
+      font-size: 2rem;
+    }
+
+    .sm-heading {
+      font-size: 1.1rem;
+      margin-bottom: 8rem;
+      padding: 0.1rem 0.5rem;
+      background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
+    }
+
+    .projects {
+      grid-template-columns: 1fr;
+    }
+
+    .about-info {
+      align-items: center;
+      text-align: center;
+
+      .bio-image {
+        background: url(../img/portrait_small.jpg);
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+
+  main#contact {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .sm-heading {
+      font-size: 1rem;
+      margin-bottom: 8rem;
+      padding: 0.1rem 0.5rem;
+    }
+  }
+
+  .boxes {
+    div {
+      font-size: 1.25rem;
+      padding: 1rem 1rem;
+    }
   }
 }
