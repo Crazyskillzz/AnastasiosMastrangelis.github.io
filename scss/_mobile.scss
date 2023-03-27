@@ -10,6 +10,12 @@
     }
   }
 }
+
+#about {
+  .sm-heading {
+    margin-bottom: 3rem;
+  }
+}
 // Desktops & Laptops
 @include mediaLg {
   .projects {
@@ -19,6 +25,25 @@
   main {
     .sm-heading {
       margin-bottom: 8rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+    & h3 {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .bio-image {
+      margin-top: 2rem;
     }
   }
 }
@@ -36,7 +61,6 @@
 
     .sm-heading {
       font-size: 1rem;
-      margin-bottom: 10rem;
       padding: 0.1rem 0.5rem;
       background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
     }
@@ -84,6 +108,17 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #about {
+    .about-info {
+      .bio p {
+        font-size: 1.5rem;
+      }
+    }
+    .sm-heading {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 // Smartphones
@@ -104,7 +139,6 @@
 
     .sm-heading {
       font-size: 1.1rem;
-      margin-bottom: 8rem;
       padding: 0.1rem 0.5rem;
       background: rgba(lighten($color: $primary-color, $amount: 2), 0.5);
     }
@@ -146,6 +180,21 @@
     div {
       font-size: 1.24rem;
       padding: 1rem 1rem;
+    }
+  }
+
+  #about {
+    .sm-heading {
+      margin-bottom: 4rem;
+    }
+    .bio {
+      margin-top: 2rem;
+    }
+    .bio-image {
+      margin-top: 1rem;
+    }
+    .bio p {
+      font-size: 1.1rem;
     }
   }
 }
