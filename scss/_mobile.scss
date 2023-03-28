@@ -24,7 +24,7 @@
 
   main {
     .sm-heading {
-      margin-bottom: 8rem;
+      margin-bottom: 4rem;
       margin-top: 2rem;
     }
   }
@@ -112,11 +112,11 @@
   #about {
     .about-info {
       .bio p {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
     }
     .sm-heading {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
     }
   }
 }
@@ -185,6 +185,7 @@
 
   #about {
     .sm-heading {
+      font-size: 1.2;
       margin-bottom: 4rem;
     }
     .bio {

@@ -181,6 +181,8 @@ main {
     background: #515151;
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
+  .about-info .job h5 {
+    color: #eece1a; }
 
 .projects {
   display: grid;
@@ -253,7 +255,7 @@ main {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   main .sm-heading {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     margin-top: 2rem; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
@@ -301,9 +303,9 @@ main {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   #about .about-info .bio p {
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   #about .sm-heading {
-    font-size: 1.5rem; } }
+    font-size: 1.25rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -343,6 +345,7 @@ main {
     font-size: 1.24rem;
     padding: 1rem 1rem; }
   #about .sm-heading {
+    font-size: 1.2;
     margin-bottom: 4rem; }
   #about .bio {
     margin-top: 2rem; }
